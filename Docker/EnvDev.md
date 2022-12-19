@@ -21,9 +21,9 @@
 `Docker Compose version 2.14.1`
 
 ---
-##Creating of environment
+## Creating of environment
 
-###1.Create the project directory
+### 1.Create the project directory
 
 *Exemple*
 
@@ -31,7 +31,7 @@
 mkdir myProjectEnv
 cd myProjectEnv
 ```
-###2.Create and configure the docker-compose.yml
+### 2.Create and configure the docker-compose.yml
 
 **Create new file : "docker-compose.yml"**
 
@@ -86,7 +86,7 @@ volumes:
     db-data:
 ```
 
-###3.Creating the Dockerfile
+### 3.Creating the Dockerfile
 
 **Create new folder : "Docker" and create new file "Dockerfile" in folder**
 
@@ -124,7 +124,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 WORKDIR /var/www/
 ```
 
-###4.Creating the virtual host
+### 4.Creating the virtual host
 
 **Create new folder : "vhosts" and create new file "vhosts.conf" in folder**
 
@@ -174,7 +174,7 @@ ServerName localhost
 </VirtualHost>
 ```
 
-###5.Test the environment 
+### 5.Test the environment 
 
 **Execute command for testing the environment**
 
@@ -197,4 +197,4 @@ ServerName localhost
 > <br> localhost:8080 or 127.0.0.1:8080 for PHPMyAdmin
 > <br> localhost:8000 or 127.0.0.1:8000 for the Apache server 
 
-##Congrate your Docker development environment for Symfony is complete !
+## Congrate your Docker development environment for Symfony is complete !
